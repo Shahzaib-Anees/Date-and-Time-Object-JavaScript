@@ -1,18 +1,7 @@
-let systemGeneratedNum = Math.floor(Math.random() * 10)+1;
-let userInputNum = +prompt("Guess the Number between 1 to 10 :");
+let lateDate = new Date("Dec 31, 2024");
+// console.log(date);
 
-if(userInputNum === systemGeneratedNum){
-    document.write(`<div class="card">
-    <h4>Printing Random Number Value</h4>
-    <span>Random Number : ${systemGeneratedNum}</span>
-    <span> Your Input : ${userInputNum}</span>
-    <span> Congratulations💥! You have Guess the correct Number</span>
+document.write(`<div class="card">
+    <h4>Printing Later Date in Browser</h4>
+    <span> "Later Date : ${lateDate}"  </span>
     </div>`);
-}else {
-    document.write(`<div class="card">
-    <h4>Printing Random Number Value</h4>
-    <span>Random Number : ${systemGeneratedNum}</span>
-    <span> Your Input : ${userInputNum}</span>
-    <span> Sorry😪! Your Guess is Incorrect</span>
-    </div>`);
-}

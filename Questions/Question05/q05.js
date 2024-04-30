@@ -1,26 +1,18 @@
-function coinValueTeller() {
-    let randomNumber = Math.floor(Math.random() * 3);
-    let coinValue = randomNumber + 1 ;
-    console.log(coinValue);
-    if (coinValue === 1) {
-        document.write(`<div class="card">
-    <h4>Printing Random Coin Value</h4>
-    <span> ${coinValue} </span>
-    <span> Random Coin Value : Tails  </span>
+let date = new Date();
+let day = date.getDay();
+let month = date.getMonth();
+let monthsArray = ["January", "Feburary", "March", "April", "May", "June", "July", "August", "September", "October", "Novemmber", "December"];
+
+let presentMonth = monthsArray[month];
+
+if (day < 15) {
+    document.write(`<div class="card">
+    <h4>Checking for Present Month Days</h4>
+    <span> "Fist Fifteen Days of ${presentMonth}"  </span>
     </div>`);
-    } else if (coinValue === 2) {
-        document.write(`<div class="card">
-    <h4>Printing Random Coin Value</h4>
-    <span> ${coinValue} </span>
-    <span> Random Coin Value : Heads  </span>
+}else{
+    document.write(`<div class="card">
+    <h4>Checking for Present Month Days</h4>
+    <span> "Last Fifteen Days of ${presentMonth}"  </span>
     </div>`);
-    } else {
-        console.log("Wrong Coin Value");
-    }
 }
-
-
-coinValueTeller();
-coinValueTeller();
-coinValueTeller();
-
