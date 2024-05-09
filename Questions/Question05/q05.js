@@ -8,7 +8,7 @@ let presentMonth = monthsArray[month];
 if (day < 15) {
     document.write(`<div class="card">
     <h4>Checking for Present Month Days</h4>
-    <span> "Fist Fifteen Days of ${presentMonth}"  </span>
+    <span> "First Fifteen Days of ${presentMonth}"  </span>
     </div>`);
 }else{
     document.write(`<div class="card">
