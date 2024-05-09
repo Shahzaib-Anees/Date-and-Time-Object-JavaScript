@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maths Methods in JavaScript | Question06</title>
     <link rel="stylesheet" href="./../../style.css">
+    <link rel="stylesheet" href="./q14.css">
 </head>
 
 <body>
@@ -14,6 +15,46 @@
         <p>I am practicing and understanding built-in Date and Time Object of JavaScript </p>
     </div>
 
+    <div class="card">
+        <h4>K-Electric Bill</h4>
+        <div id="input-field">
+            <input type="text" name="Consumer-Name" id="consumer-name"
+                placeholder="Enter your Name to get your Elctricity Bill">
+            <button id="bill_generator-button" onclick="billGenerator()">Generate Bill</button>
+        </div>
+
+        <div id="bill-container">
+            <div class="info-containers">
+                <span>Consumer Name :</span>
+                <strong id="userName"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Month :</span>
+                <strong id="currentMonth"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Units :</span>
+                <strong id="unitsCount"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Charges per Unit :</span>
+                <strong id="unitCharge"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Net Amount Payable (within due date) : </span>
+                <strong id="netAmount"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Late Payment Surcharge : </span>
+                <strong id="latefine"></strong>
+            </div>
+            <div class="info-containers">
+                <span>Gross Amount Payable (after due date) : </span>
+                <strong id="grossAmount"></strong>
+            </div>
+            
+        </div>
+    </div>
 </body>
 <script src="./q14.js"></script>
 

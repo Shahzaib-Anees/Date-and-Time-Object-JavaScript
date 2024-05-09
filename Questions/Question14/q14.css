@@ -1,0 +1,56 @@
+.card {
+    margin: 50px auto;
+    padding: 20px 40px;
+}
+
+#input-field {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    gap: 10px;
+}
+
+#consumer-name {
+    width: 400px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 2px 10px;
+    border: 2px solid #1f1f1f;
+    border-radius: 10px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#consumer-name:hover {
+    border: 2px solid rgb(136, 136, 242);
+    scale: 1.02;
+    transition: scale 0.6s;
+}
+
+#bill_generator-button {
+    width: fit-content;
+    padding: 10px;
+    background-color: #1f1f1f;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: scale 0.6s;
+}
+
+#bill_generator-button:hover {
+    scale: 1.1;
+}
+
+
+#bill-container{
+    width: fit-content;
+    border: 2px solid black;
+    padding: 30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+    border-radius: 10px;
+}
